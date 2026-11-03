@@ -31,5 +31,12 @@ These are source graphics, not LaTeX placeholder boxes. Numbers printed within t
 - EDA and PER review manuscripts do not establish complete current author lists under the binding first-author decision; publication entries identify Jiang and collaborators without inventing the remaining list. EDA's older author block conflicts with the binding instructions and is not used as the final list.
 - FSI-Survey is described as targeting Neurocomputing; the submission status is not stated in the supplied materials. CVPR and TMI decision dates are unknown.
 - EDA and PER results are preliminary, with repeated runs and variance still to be completed. EDA source placeholders require final artwork in the underlying paper; none is reproduced here. A reader study remains proposed.
-- The MINT-CoT source bibliography entry has no year, which produces a BibTeX warning; no date was invented. Some figures contain small source text and should be inspected in the final defense-format rendering.
+- Some figures contain small source text and should be inspected in the final defense-format rendering.
 - The handbook milestones are transcribed from the requested outline; this draft did not independently verify current university policy.
+
+## Revision round 1
+
+- Switched to article sections, removed duplicate contribution bullets, tightened prose and caveats, and condensed the conclusion to two paragraphs.
+- Retained the two MedVIGIL figures and the EDA and PER figures at reduced height, with source credits; removed the other figure blocks.
+- Compressed the complete publication list, retaining dissertation author lists, roles and flags, and added the verified 2025 NeurIPS metadata for MINT-CoT.
+- The review asks Henry to confirm the MedVIGIL counts 8,476, 4,238, 355,062 and 180 against the current TMI manuscript; these are supported by the supplied catalog.

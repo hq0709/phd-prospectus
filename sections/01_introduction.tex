@@ -1,11 +1,11 @@
-\chapter{Introduction}
+\section{Introduction}
 Medical images are rarely interpreted in isolation. A radiologist relates a visual finding to the clinical question, compares possible explanations, and decides when the available image cannot support a conclusion. Vision-language models (VLMs) offer a way to combine images with natural language, but their fluency makes it difficult to tell whether an answer reflects the image or a learned association between words and likely diagnoses. Standard evaluation on intact image--question pairs can reward a correct answer even when the visual evidence was dispensable. In deployment the question may contain a false premise, its wording may change, a relevant region may be degraded, or the clinically meaningful observation may lie within a volume rather than a single image. The consequential failure is a silent one: the system answers confidently although the evidence needed to answer is absent or corrupted.
 
 The \textbf{Trustworthy} thread therefore concerns more than correctness. It asks whether a model is aligned with diagnostically relevant features, whether it recognizes unsupported questions, and whether a representation that encodes a finding actually influences the answer. These are different properties. An attention map can identify a plausible region without establishing that the region caused the prediction. A linear probe can recover a concept without showing that the model uses the same information during generation. An answer can be factually right while its accompanying point lies outside the lesion. This prospectus makes those distinctions operational through controlled perturbation, intervention, and explicit answer construction.
 
 The \textbf{Efficient} thread is equally central. Clinical AI must make responsible use of energy, model parameters, perception, labels, and expert annotation. HybridMED shares self-attention and feed-forward layers across generation branches; EGMA examines the value of limited gaze supervision; EG-SpikeFormer explores event-driven spiking computation; ViThinker queries visual features selectively; EDA selectively zooms; PER learns candidate generation from normal or unlabeled scans; and MedVIGIL computes volumetric labels rather than asking experts to annotate each probe \citep{hybridmed,egma,egspike,vithinker,eda,per,medtmi}. These mechanisms address different resources, so their measurements should not be collapsed into a single efficiency score. Savings in one dimension also do not establish clinical utility or lower total cost in every deployment.
 
-\section{Research questions}
+\subsection{Research questions}
 \begin{enumerate}
 \item \textbf{RQ1 (Evidence alignment \& efficient representation).} Can auxiliary clinical supervision --- radiologists' eye gaze and the findings/impression structure of reports --- yield medical representations that attend to diagnostically relevant regions instead of shortcuts, \emph{and do so parameter-, data-, and energy-efficiently}? (HybridMED, EGMA, EG-SpikeFormer)
 \item \textbf{RQ2 (Efficient visual reasoning).} Can a model actively acquire \emph{minimal sufficient} perceptual evidence per reasoning step rather than passively consuming precomputed inputs, reducing perceptual/token cost? (ViThinker)
@@ -15,17 +15,8 @@ The \textbf{Efficient} thread is equally central. Clinical AI must make responsi
 \end{enumerate}
 The guarantee in RQ5 is specific to EDA's declared mapping from a point to a spatial answer; it does not guarantee that the point is correct or that PER's learned verifier is causally faithful. This distinction guides the proposed evaluation.
 
-\section{Contributions and organization}
-\begin{itemize}
-\item HybridMED aligns report sections with image features and shares generation components to limit parameter growth \citep{hybridmed}.
-\item EGMA uses synchronous gaze as a clinical alignment signal and examines auxiliary-data efficiency \citep{egma}.
-\item EG-SpikeFormer combines gaze guidance and spiking computation to study trustworthy representation and energy--accuracy trade-offs \citep{egspike}.
-\item ViThinker contributes task-driven visual queries and sparse perceptual use \citep{vithinker}.
-\item MedVIGIL measures unsupported answering and uses computed volumetric labels to reduce annotation cost \citep{medconf,medtmi}.
-\item RAW tests whether concepts can control their own answers; its contribution is diagnostic rather than efficiency-centered \citep{raw}.
-\item EDA proposes spatial answers derived from points, with selective perception and limited box supervision \citep{eda}.
-\item PER proposes prediction-error candidates and a naming verifier, reducing lesion-label requirements for candidate generation \citep{per}.
-\end{itemize}
+\subsection{Contributions and organization}
+The following works address these questions \citep{medconf,raw,fsi}.
 \begin{table}[htbp]\centering\small
 \caption{Contribution, question, and research thread.}
 \begin{tabularx}{\textwidth}{l l Y Y}\toprule
@@ -36,4 +27,4 @@ MedVIGIL & 3 & Detect unsupported answers & Computed-label annotation \\
 RAW / survey & 4 & Readability versus control & Diagnostic, not efficiency-centric \\
 EDA / PER & 5 & Grounded spatial answers / named candidates & Selective perception, labels \\\bottomrule
 \end{tabularx}\end{table}
-Chapter~2 reviews feature-space interpretability and related efficiency work. Chapter~3 presents clinical representation alignment. Chapter~4 develops active visual reasoning. Chapter~5 describes the MedVIGIL audit. Chapter~6 investigates concept-level control. Chapter~7 sets out proposed work and integration. Chapter~8 gives the schedule, Chapter~9 lists publications, and Chapter~10 concludes.
+Section~2 reviews feature-space interpretability and related efficiency work. Section~3 presents clinical representation alignment. Section~4 develops active visual reasoning. Section~5 describes the MedVIGIL audit. Section~6 investigates concept-level control. Section~7 sets out proposed work and integration. Section~8 gives the schedule, Section~9 lists publications, and Section~10 concludes.
