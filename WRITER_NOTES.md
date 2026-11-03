@@ -10,7 +10,11 @@
 
 - `/workspace/thesis/unpublished/MedVIGIL_TMI/src/figures/fig1.png` → `figures/medvigil.png`
 - `/workspace/thesis/unpublished/MedVIGIL_TMI/src/figs/fig_render.pdf` → `figures/medvigil3d.pdf`
-- `/workspace/thesis/unpublished/EDA/src/figures/cvpr/trace_per.pdf` → `figures/eda.pdf`
+- `/workspace/thesis/papers/EGMA/src/Figs/pipeline5.pdf` → `figures/egma_framework.pdf`
+- `/workspace/thesis/papers/EG-SpikeFormer/src/pipeline_final.png` → `figures/egspike_arch.png`
+- `/workspace/thesis/papers/ViThinker/src/overview.png` → `figures/vithinker_overview.png`
+- `/workspace/thesis/unpublished/RAW/src/figures/fig1_framework.pdf` → `figures/raw_framework.pdf`
+- `/workspace/thesis/unpublished/EDA/src/figures/cvpr/figure-2-policy-refined.png` → `figures/eda_method.png`
 - `/workspace/thesis/unpublished/PER/src/figures/method.pdf` → `figures/per.pdf`
 
 These are source graphics, not LaTeX placeholder boxes. Numbers printed within the graphics belong to the original figures and are preserved as part of the credited source artwork; they are not additional prospectus claims.
@@ -20,7 +24,7 @@ These are source graphics, not LaTeX placeholder boxes. Numbers printed within t
 - The released MedVIGIL reader-study form has 104 probes: `/workspace/thesis/unpublished/MedVIGIL_TMI/src/medvigil_body.tex:1268`.
 - PER liver values 0.89 and 0.85 use the final liver verifier, despite the world model being trained without lesion annotations: `/workspace/thesis/unpublished/PER/src/numbers.tex:128-129`. This qualification is made explicit in the draft.
 - RAW answerability threshold 0.5: `/workspace/thesis/unpublished/RAW/src/sections/3_framework.tex:67`; five competing concepts: `/workspace/thesis/unpublished/RAW/src/sections/app_seed_protocol.tex:24`. EDA zoom factor 2: `/workspace/thesis/unpublished/EDA/src/numbers.tex:1159`. Nine alternative composites: `/workspace/thesis/unpublished/MedVIGIL_TMI/src/medvigil_body.tex:649`; model group listing: `medvigil_body.tex:545-551`. Research-question and chapter numbers, calendar milestones, author positions, and study setups follow outline §§B–D. Publication years and author lists follow `/workspace/pubs.txt`; the journal author list follows `/workspace/thesis/unpublished/MedVIGIL_TMI/src/medvigil_submission_body.tex:12`.
-- Values embedded in copied graphics are reproduced directly from the source files listed above; the EDA trace in particular contains case-specific pixel coordinates and distances. These are figure annotations, not newly estimated results.
+- Values embedded in copied graphics are reproduced directly from the source files listed above; these are figure annotations, not newly estimated results.
 
 ## Open issues
 
@@ -40,3 +44,12 @@ These are source graphics, not LaTeX placeholder boxes. Numbers printed within t
 ## Revision round 2
 
 - Connected RAW to its paper title, identified the TMI entry as the MedVIGIL journal extension, and removed four unreferenced figure files after checking the LaTeX sources.
+
+## Revision round 3 (architecture figures)
+
+- EGMA Fig. 2: `/workspace/thesis/papers/EGMA/src/Figs/pipeline5.pdf` → `figures/egma_framework.pdf`.
+- EG-SpikeFormer Fig. 1: `/workspace/thesis/papers/EG-SpikeFormer/src/pipeline_final.png` → `figures/egspike_arch.png`.
+- ViThinker Fig. 1: `/workspace/thesis/papers/ViThinker/src/overview.png` → `figures/vithinker_overview.png`.
+- RAW Fig. 2: `/workspace/thesis/unpublished/RAW/src/figures/fig1_framework.pdf` → `figures/raw_framework.pdf`.
+- EDA Fig. 2: `/workspace/thesis/unpublished/EDA/src/figures/cvpr/figure-2-policy-refined.png` → `figures/eda_method.png`, replacing the trace.
+- PER Fig. 2: `/workspace/thesis/unpublished/PER/src/figures/method.pdf` → `figures/per.pdf`; caption expanded.
