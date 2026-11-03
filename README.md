@@ -13,5 +13,5 @@ latexmk -pdf main.tex
 ## Layout
 - `main.tex`: root document
 - `sections/`: title page, abstract and chapters
-- `figures/`: figures reused from the source papers (each caption credits its paper)
+- `figures/`: `medvigil.png`, `medvigil3d.pdf`, `eda.pdf`, and `per.pdf`, reused from the source papers (each caption credits its paper)
 - `refs.bib`: bibliography

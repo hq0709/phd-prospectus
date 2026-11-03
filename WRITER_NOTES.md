@@ -8,12 +8,8 @@
 
 ## Reused figures
 
-- `/workspace/thesis/unpublished/FSI-Survey/src/supplement/figures/fig3_taxonomy.pdf` → `figures/fsi.pdf`
-- `/workspace/thesis/papers/EG-SpikeFormer/src/pipeline_final.png` → `figures/egspike.png`
-- `/workspace/thesis/papers/ViThinker/src/overview.png` → `figures/vithinker.png`
 - `/workspace/thesis/unpublished/MedVIGIL_TMI/src/figures/fig1.png` → `figures/medvigil.png`
 - `/workspace/thesis/unpublished/MedVIGIL_TMI/src/figs/fig_render.pdf` → `figures/medvigil3d.pdf`
-- `/workspace/thesis/unpublished/RAW/src/figures/fig0_teaser.pdf` → `figures/raw.pdf`
 - `/workspace/thesis/unpublished/EDA/src/figures/cvpr/trace_per.pdf` → `figures/eda.pdf`
 - `/workspace/thesis/unpublished/PER/src/figures/method.pdf` → `figures/per.pdf`
 
@@ -40,3 +36,7 @@ These are source graphics, not LaTeX placeholder boxes. Numbers printed within t
 - Retained the two MedVIGIL figures and the EDA and PER figures at reduced height, with source credits; removed the other figure blocks.
 - Compressed the complete publication list, retaining dissertation author lists, roles and flags, and added the verified 2025 NeurIPS metadata for MINT-CoT.
 - The review asks Henry to confirm the MedVIGIL counts 8,476, 4,238, 355,062 and 180 against the current TMI manuscript; these are supported by the supplied catalog.
+
+## Revision round 2
+
+- Connected RAW to its paper title, identified the TMI entry as the MedVIGIL journal extension, and removed four unreferenced figure files after checking the LaTeX sources.
