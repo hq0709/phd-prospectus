@@ -9,9 +9,9 @@
 ## Reused figures
 
 - `/workspace/thesis/unpublished/MedVIGIL_TMI/src/figures/fig1.png` → `figures/medvigil.png`
+- `/workspace/thesis/unpublished/MedVIGIL_NeurIPS_CR/src/figures/pipeline.png` → `figures/medvigil_pipeline.png` (compressed)
 - `/workspace/thesis/unpublished/MedVIGIL_TMI/src/figs/fig_render.pdf` → `figures/medvigil3d.pdf`
 - `/workspace/thesis/papers/EGMA/src/Figs/pipeline5.pdf` → `figures/egma_framework.pdf`
-- `/workspace/thesis/papers/EG-SpikeFormer/src/pipeline_final.png` → `figures/egspike_arch.png`
 - `/workspace/thesis/papers/ViThinker/src/overview.png` → `figures/vithinker_overview.png`
 - `/workspace/thesis/unpublished/RAW/src/figures/fig1_framework.pdf` → `figures/raw_framework.pdf`
 - `/workspace/thesis/unpublished/EDA/src/figures/cvpr/figure-2-policy-refined.png` → `figures/eda_method.png`
@@ -48,8 +48,13 @@ These are source graphics, not LaTeX placeholder boxes. Numbers printed within t
 ## Revision round 3 (architecture figures)
 
 - EGMA Fig. 2: `/workspace/thesis/papers/EGMA/src/Figs/pipeline5.pdf` → `figures/egma_framework.pdf`.
-- EG-SpikeFormer Fig. 1: `/workspace/thesis/papers/EG-SpikeFormer/src/pipeline_final.png` → `figures/egspike_arch.png`.
 - ViThinker Fig. 1: `/workspace/thesis/papers/ViThinker/src/overview.png` → `figures/vithinker_overview.png`.
 - RAW Fig. 2: `/workspace/thesis/unpublished/RAW/src/figures/fig1_framework.pdf` → `figures/raw_framework.pdf`.
 - EDA Fig. 2: `/workspace/thesis/unpublished/EDA/src/figures/cvpr/figure-2-policy-refined.png` → `figures/eda_method.png`, replacing the trace.
 - PER Fig. 2: `/workspace/thesis/unpublished/PER/src/figures/method.pdf` → `figures/per.pdf`; caption expanded.
+
+## Revision round 4
+
+- Removed the EG-SpikeFormer architecture figure and its reference; added the MedVIGIL NeurIPS pipeline figure while retaining both existing MedVIGIL figures.
+- Numbered all publication entries continuously across groups.
+- Author-role changes: RAW (Is Decodability Enough?) and FSI-Survey changed from co-first to first author; FSI-Survey's equal-contribution asterisks were removed. RAW already had no author asterisks. EG-SpikeFormer, ADLGen, Bridging Classical and Quantum, and MolQAE retain co-first roles. No other entry in `/workspace/pubs.txt` meets the first-position equal-contribution rule.
