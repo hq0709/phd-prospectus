@@ -1,5 +1,5 @@
 \section{Evidence-Aligned Medical Representation Learning}\label{sec:alignment}
-Reports and radiologist gaze provide clinical supervision without separate pixel-level labels for each example. The studies below examine the resulting representations alongside parameter sharing, gaze data, and energy use.
+Reports and radiologist gaze provide clinical supervision without separate pixel-level labels. The studies below examine the resulting representations alongside parameter sharing, gaze data, and energy use.
 \subsection{HybridMED: aligning report structure and images}
 Reports describe image findings at different semantic levels. HybridMED~\citep{hybridmed} aligns global image representations with report impressions and token-level visual representations with findings. Its generation decoder learns captioning and summarization proxy tasks, with knowledge distilled from summarization to captioning. This arrangement draws on the complementary roles of descriptive observations and higher-level clinical summaries. Pretraining uses MIMIC-CXR, with approximately 135,000 image--report pairs after preprocessing from approximately 232,000 images and 367,000 reports.
 
