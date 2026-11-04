@@ -13,5 +13,5 @@ latexmk -pdf main.tex
 ## Layout
 - `main.tex`: root document
 - `sections/`: title page, abstract and chapters
-- `figures/`: `egma_framework.pdf`, `vithinker_overview.png`, `medvigil.png`, `medvigil_pipeline.png`, `medvigil3d.pdf`, `raw_framework.pdf`, `eda_method.png`, and `per.pdf`, reused from the source papers (each caption credits its paper)
+- `figures/`: `egma_framework.pdf`, `vithinker_overview.png`, `medvigil.png`, `medvigil_pipeline.png`, `medvigil3d_clean.png`, `raw_framework.pdf`, `eda_method.png`, and `per.pdf`, reused from the source papers (each caption credits its paper)
 - `refs.bib`: bibliography
